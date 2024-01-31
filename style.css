@@ -1,0 +1,339 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Rubik, sans-serif;
+    box-sizing: border-box;
+    font-weight: 400;
+    padding: 3rem;
+    background-color: hsl(160, 0%, 98%);
+}
+
+.main {
+    width: 100%;
+    display: flex;
+}
+
+.top-background {
+    background: linear-gradient(to bottom left, hsla(293, 100%, 63%), hsl(264, 100%, 61%)
+    );
+    height: 90vh;
+    width: 40vw;
+    position: absolute;
+    top: 0; left: 0;
+    border-bottom-right-radius: 40rem;
+}
+
+.bottom-background {
+    background-color: hsl(270, 20%, 96%);
+    height: 90vh;
+    width: 40vw;
+    position: absolute;
+    bottom: -30rem; right: 0;
+    border-top-left-radius: 40rem;
+}
+
+.phone-background {
+    background-color: hsl(0, 0%, 100%);
+    width: 25rem;
+    height: auto;
+    padding: .25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3rem;
+    border: .1rem solid hsl(270, 20%, 96%);
+    filter: drop-shadow(.6rem .8rem .5rem hsl(270, 13%, 89%));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.phone-inner-top {
+    background: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    width: 95%;
+    height: 15%;
+    margin: .6rem .6rem 0 .6rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone-inner-top-decoration {
+    width: 60%;
+    height: 1.8rem;
+    background-color: hsl(0, 0%, 100%);
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+  
+.phone-inner-top-info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone-inner-top-info-right {
+    margin: 0 1rem 1.3rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.phone-inner-top-info-left {
+    width: 60%;
+    margin: 1rem 0 1.3rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.phone-inner-top-info img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.phone-inner-top-info-left-text {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+#avatar-icon {
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 2rem;
+    border: .1rem solid hsl(0, 0%, 100%);
+    margin: 0 .5rem 0 .5rem;
+}
+
+p {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.1rem;
+    margin: 0 0 0 .5rem;
+}
+
+span {
+    color: hsl(0, 0%, 100%, .4);
+    font-size: .8rem;
+    margin: .2rem 0 0 .5rem;
+}
+
+.phone-inner-screen {
+    background-color: hsl(270, 20%, 96%);
+    width: 95%;
+    height: 85%;
+    margin: 0 .6rem .6rem .6rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.phone-inner-screen-grey-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.phone-inner-screen-grey-text-p {
+    background-color: hsl(206, 6%, 79%, .3);
+    margin: 1rem 0 .5rem 1rem;
+    padding: .5rem;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.phone-inner-screen-grey-text p {
+    color: hsl(276, 55%, 52%);
+    font-size: .8rem;
+    line-height: 1.5;
+}
+
+.phone-inner-screen-grey-text :last-child {
+    margin-top: 0;
+}
+  
+.phone-inner-screen-white-text img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    margin: .2rem;
+}
+
+.phone-inner-screen-white-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+
+#phone-inner-screen-white-text-img {
+    margin-right: .6rem;
+    margin-top: .5rem;
+}
+
+.phone-inner-screen-white-text-p {
+    padding: .5rem;
+    background-color: hsl(0, 0%, 100%);
+    margin: .5rem 1rem 1rem 0;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.width-no-margin {
+    width: 55%;
+    margin-bottom: 0;
+    margin-top: .5rem;
+}
+
+.phone-inner-screen-white-text p {
+    color: hsl(271, 15%, 43%);
+    font-size: .8rem;
+    line-height: 1.5;
+}
+
+.phone-inner-screen-pay {
+    width: 70%;
+    height: 3rem;
+    background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    margin: .6rem 0 0 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone-inner-screen-pay img {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-left: 1rem;
+    margin-right: .5rem;
+}
+
+.phone-inner-screen-pay-text {
+    display: flex;
+    text-align: center;
+}
+
+.phone-inner-screen-pay-text p {
+    color: hsl(0, 0%, 100%, .5);
+    font-size: .8rem;
+    margin: 0.2rem 0 0 0.5rem;
+}
+
+.phone-inner-screen-pay-price {
+    margin-right: 1.5rem;
+}
+
+.phone-inner-screen-pay-price p {
+    font-size: 1.3rem;
+}
+
+.phone-inner-screen-input {
+    width: 90%;
+    height: 3rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10rem;
+    margin: 1.5rem 1rem 1.2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone-inner-screen-input-send {
+    background-color: hsl(271, 36%, 24%);
+    border-radius: 10rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: .5rem;
+}
+
+.phone-inner-screen-input-send img {
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.phone-inner-screen-input p {
+    color: hsl(270, 7%, 64%, .5);
+    font-size: .9rem;
+    margin-left: 2rem;
+}
+
+.text {
+    width: 79%;
+    position: absolute;
+    bottom: -28rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 4rem;
+    color: hsl(271, 36%, 24%);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.text p {
+   color: hsl(270, 7%, 64%);
+   margin: 1.5rem 0 5rem 0;
+   line-height: 1.8;
+   font-size: 1.5rem;
+}
+
+
+@media (min-width: 50rem) {
+
+    .top-background {
+        width: 60vh;
+        border-bottom-left-radius: 40rem;
+        left: -5rem;
+    }
+
+    .bottom-background {
+        bottom: 0;
+        width: 20vw;
+    }
+
+    .phone-background {
+        left: 32%;
+    }
+
+    .text {
+        width: 30%;
+        bottom: 30%;
+        left: 65%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: start;
+    }
+}
